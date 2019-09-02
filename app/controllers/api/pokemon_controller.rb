@@ -1,7 +1,7 @@
 class Api::PokemonController < ApplicationController
 
     def index
-        @pokemons = Pokemon.all
+        @pokemon = Pokemon.all
     end
 
     def show
