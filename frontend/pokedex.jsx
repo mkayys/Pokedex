@@ -5,6 +5,7 @@ import configureStore from './store/store';
 
 import { fetchAllPokemon } from './util/api_util';
 import { receiveAllPokemon, requestAllPokemon } from './actions/pokemon_actions';
+import { selectAllPokemon } from './reducers/selectors';
 
 document.addEventListener('DOMContentLoaded', () => {
     const store = configureStore();
@@ -18,6 +19,8 @@ document.addEventListener('DOMContentLoaded', () => {
     window.requestAllPokemon = requestAllPokemon;
     window.fetchAllPokemon = fetchAllPokemon;
     window.receiveAllPokemon = receiveAllPokemon;
+
+    window.selectAllPokemon = selectAllPokemon;
 
     ReactDOM.render(<h1>Pokedex</h1>, rootEl);
 });
