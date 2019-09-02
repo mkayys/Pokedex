@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 import configureStore from './store/store';
 
 import { fetchAllPokemon } from './util/api_util';
-import { receiveAllPokemon } from './actions/pokemon_actions';
+import { receiveAllPokemon, requestAllPokemon } from './actions/pokemon_actions';
 
 document.addEventListener('DOMContentLoaded', () => {
     const store = configureStore();
@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
     window.getState = store.getState;
     window.dispatch = store.dispatch;
 
-    
+    window.requestAllPokemon = requestAllPokemon;
     window.fetchAllPokemon = fetchAllPokemon;
     window.receiveAllPokemon = receiveAllPokemon;
 
