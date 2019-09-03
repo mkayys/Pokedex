@@ -10,24 +10,23 @@ class PokemonDetail extends React.Component {
     }
 
     render() {
-        // debugger
+        debugger
         if (this.props === undefined) return null;
-        let { pokemon } = this.props;
         return (
             <div>
-                <h1>{pokemon.name}</h1>
-                <img src={pokemon.image_url} alt={pokemon.name} />
+                <h1>{this.props.pokemon.name}</h1>
+                <img src={this.props.pokemon.image_url} alt={this.props.pokemon.name} />
                 <div>
-                    Attack: {pokemon.attack}
+                    Attack: {this.props.pokemon.attack}
                 </div>
                 <div>
-                    Defense: {pokemon.defense}
+                    Defense: {this.props.pokemon.defense}
                 </div>
                 <div>
-                    Moves: {pokemon.moves}
+                    Moves: {this.props.pokemon.moves}
                 </div>
                 <div>
-                    Type: {pokemon.poke_type}
+                    Type: {this.props.pokemon.poke_type}
                 </div>
             </div>
         )

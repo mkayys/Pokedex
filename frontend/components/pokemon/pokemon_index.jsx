@@ -22,7 +22,6 @@ class PokemonIndex extends React.Component {
                     path="/pokemon/:pokemonId"
                     component={PokemonDetailContainer}
                 />
-
                 <ul>
                     {pokemon}
                 </ul>
