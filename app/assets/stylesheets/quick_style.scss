@@ -59,6 +59,17 @@
         .pokemon-info {
             font-size: 30px;
             color: black;
+            margin: 10px auto;
+
+            .pokemon-name {
+                margin-bottom: 10px;
+            }
+
+            .pokemon-type, .pokemon-attack, .pokemon-defense, .pokemon-moves {
+                margin-bottom: 7px;
+                font-size: 20px;
+            }
+
         }
     }
 }
