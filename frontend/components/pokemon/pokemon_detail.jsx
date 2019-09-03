@@ -11,9 +11,9 @@ class PokemonDetail extends React.Component {
 
     render() {
         debugger
-        if (this.props === undefined) return null;
+        if (this.props.pokemon === undefined) return null;
         return (
-            <div>
+            <div className='pokemon-details'>
                 <h1>{this.props.pokemon.name}</h1>
                 <img src={this.props.pokemon.image_url} alt={this.props.pokemon.name} />
                 <div>

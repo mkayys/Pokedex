@@ -5,3 +5,19 @@
 .pokemon-link {
     text-decoration: none;
 }
+
+.pokedex {
+    display: flex;
+    justify-content: space-between;
+
+    .pokemon-index {
+        width: 40%;
+        border: 1px solid red;
+    }
+
+    .pokemon-details {
+        flex: 1;
+        border: 1px solid black;
+    }
+}
+

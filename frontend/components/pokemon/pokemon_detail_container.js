@@ -4,7 +4,7 @@ import { requestSinglePokemon } from '../../actions/pokemon_actions';
 import PokemonDetail from './pokemon_detail';
 
 const mapStateToProps = (state, ownProps) => {
-    // debugger
+    debugger
     let pokemonId = ownProps.match.params.pokemonId;
     return ({
         pokemon: state.entities.pokemon[pokemonId],
