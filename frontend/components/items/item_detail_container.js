@@ -1,12 +1,12 @@
 import { connect } from 'react-redux';
 import { requestSinglePokemon } from '../../actions/pokemon_actions';
 
-import PokemonDetail from './pokemon_detail';
+import ItemDetail from './item_detail';
 
 const mapStateToProps = (state, ownProps) => {
-    let pokemonId = ownProps.match.params.pokemonId;
+    let itemId = ownProps.match.params.itemId;
     return ({
-        pokemon: state.entities.pokemon[pokemonId],
+        item: state.entities.items[itemId],
     })
 };
 
@@ -15,4 +15,4 @@ const mapDispatchToProps = dispatch => ({
 });
 
 
-export default connect(mapStateToProps, mapDispatchToProps)(PokemonDetail);
+export default connect(mapStateToProps, mapDispatchToProps)(ItemDetail);
